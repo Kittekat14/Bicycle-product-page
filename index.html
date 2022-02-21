@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2df07d0a6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="flex-navbar">
+      <h1 class="logo">Bikestore</h1>
+      <ul class="menu-list">
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Bicycles</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Delivery</a>
+        </li>
+        <li class="menu-list__item">
+          <a href="#" class="menu-list__link">Contacts</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input
+          type="search"
+          placeholder="Type for search"
+          name="product-search"
+          id="product-search"
+        />
+        <button aria-label="start the search" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+      <div class="profile__container">
+        <a href="" class="profile__link">LOGIN</a>
+        <a href="" class="profile__link">JOIN US</a>
+        <a href="" class="profile__link">GO TO CART</a>
+      </div>
+    </nav>
+    <main>
+      <div class="main__container">
+        <div class="img__container">
+          <fieldset class="rating">
+            <input type="radio" id="star5" name="rating" value="5" /><label
+              class="full"
+              for="star5"
+              title="5 stars"
+            ></label>
+            <input
+              type="radio"
+              id="star4half"
+              name="rating"
+              value="4 and a half"
+            /><label class="half" for="star4half" title="4.5 stars"></label>
+            <input type="radio" id="star4" name="rating" value="4" /><label
+              class="full"
+              for="star4"
+              title="4 stars"
+            ></label>
+            <input
+              type="radio"
+              id="star3half"
+              name="rating"
+              value="3 and a half"
+            /><label class="half" for="star3half" title="3.5 stars"></label>
+            <input type="radio" id="star3" name="rating" value="3" /><label
+              class="full"
+              for="star3"
+              title="3 stars"
+            ></label>
+            <input
+              type="radio"
+              id="star2half"
+              name="rating"
+              value="2 and a half"
+            /><label class="half" for="star2half" title="2.5 stars"></label>
+            <input type="radio" id="star2" name="rating" value="2" /><label
+              class="full"
+              for="star2"
+              title="2 stars"
+            ></label>
+            <input
+              type="radio"
+              id="star1half"
+              name="rating"
+              value="1 and a half"
+            /><label class="half" for="star1half" title="1.5 stars"></label>
+            <input type="radio" id="star1" name="rating" value="1" /><label
+              class="full"
+              for="star1"
+              title="1 star"
+            ></label>
+            <input
+              type="radio"
+              id="starhalf"
+              name="rating"
+              value="half"
+            /><label class="half" for="starhalf" title="0.5 stars"></label>
+          </fieldset>
+          <img
+            src="http://via.placeholder.com/800x430"
+            alt="placeholder for bike product"
+          />
+          <figure>
+            <img src="https://via.placeholder.com/90" alt="bike gallery" />
+            <img src="https://via.placeholder.com/90" alt="bike gallery" />
+            <img src="https://via.placeholder.com/90" alt="bike gallery" />
+            <img src="https://via.placeholder.com/90" alt="bike gallery" />
+            <img src="https://via.placeholder.com/90" alt="bike gallery" />
+            <img src="https://via.placeholder.com/90" alt="bike gallery" />
+          </figure>
+        </div>
+        <article class="product__description">
+          <h1>Masi Gran Criterium: Franco Cortinovis</h1>
+          <h4>€ 2065</h4>
+          <div class="small-headline">Choose Color</div>
+          <div class="color__container">
+            <div class="select select-blue"></div>
+            <div class="select select-green"></div>
+            <div class="select select-red"></div>
+            <div class="select select-yellow"></div>
+            <div class="select select-brown"></div>
+            <div class="select select-grey"></div>
+          </div>
+          <div class="button__container">
+            <button class="size-button">Size</button>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+          <div class="small-headline">Description</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            debitis similique illum minima, ullam doloribus porro dolorum.
+            Incidunt, sit dolores? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iste, saepe.
+          </p>
+          <section class="social-media-footer">
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://tumblr.com/" target="_blank"
+              ><i class="fa-brands fa-tumblr"></i
+            ></a>
+          </section>
+        </article>
+      </div>
+    </main>
+  </body>
+</html>

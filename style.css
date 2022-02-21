@@ -1,0 +1,205 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  align-self: flex-end;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.flex-navbar {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #c6c8d1;
+  color: #888b92;
+}
+
+.logo {
+  color: black;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list__item {
+  margin: 10px 20px;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+.search {
+  background: white;
+  position: relative;
+  width: 300px;
+}
+
+.search button {
+  display: inline-block;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 18px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.search input {
+  width: 100%;
+  padding: 20px 60px 20px 20px;
+  display: block;
+  border: 1px solid #cdcdcd;
+}
+
+.profile__container {
+  display: flex;
+  align-items: center;
+}
+.profile__link {
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 30px;
+}
+.profile__link:last-child {
+  padding: 20px 40px;
+  background-color: #9cbd96;
+  color: #fff;
+}
+
+.main__container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.small-headline {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.img__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__description {
+  margin-left: 10px;
+  width: 35%;
+}
+
+.color__container {
+  display: flex;
+}
+
+.button__container {
+  margin: 40px 0;
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: auto auto;
+}
+.button__container button {
+  padding: 10px 20px;
+  border: 1px solid #52a7bf;
+  text-transform: uppercase;
+}
+.cart-button {
+  background-color: #52a7bf;
+  color: #fff;
+}
+
+.social-media-footer {
+  font-size: 35px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-media-footer i {
+  color: #888b92;
+}
+
+.select {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.select:first-child {
+  margin-left: 0;
+}
+
+.select-blue {
+  background-color: #7dc8e5;
+}
+.select-green {
+  background-color: #c0e79e;
+}
+.select-red {
+  background-color: #f69779;
+}
+.select-yellow {
+  background-color: #fff326;
+}
+.select-brown {
+  background-color: #915e2d;
+}
+.select-grey {
+  background-color: #656565;
+}

@@ -140,7 +140,9 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
+.product-image {
+  max-width: 90%;
+}
 .product__description {
   margin-left: 10px;
   width: 35%;

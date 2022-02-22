@@ -187,6 +187,9 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.select:first-child {
+  margin-left: 0;
+}
 
 .select-blue {
   background-color: #7dc8e5;
